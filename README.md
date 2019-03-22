@@ -1,0 +1,2 @@
+# Portal set mail author to current user
+Inherit of portal.wizard.user. The for-loop on line 21: for wizard_user in self.sudo().with_context(active_test=False) is changed in this version. sudo() is removed so the outgoing mail for the portal inventation will be send from the current user instead of the Administrator account.
